@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid container-lg py-4 px-lg-1">
+        <a href="#" class="d-flex navbar-brand">
+            <img src="img/logo.png" alt="cloud" class="me-3" />
+            <div class="logo-info">
+              <h6 class="mb-0 text-white">Weather</h6>
+              <small>tagline goes here</small>
+            </div>
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"><i class="fa-solid fa-bars" style="color: #ffffff;"></i></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 text-center text-lg-start">
+            <li class="nav-item me-2">
+              <a class="nav-link active px-4 py-1 rounded-4" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item me-2">
+              <a class="nav-link px-4 py-1 rounded-4" href="#">News</a>
+            </li>
+            <li class="nav-item me-2">
+              <a class="nav-link px-4 py-1 rounded-4" href="#">Live Cameras</a>
+            </li>
+            <li class="nav-item me-2">
+              <a class="nav-link px-4 py-1 rounded-4" href="#">Photos</a>
+            </li>
+            <li class="nav-item me-2">
+              <a class="nav-link px-4 py-1 rounded-4" href="contact.html">Contact</a>
+            </li>
+        </div>
+      </div>
+    </nav>
+    <div class="hero">
+      <div class="container-fluid container-lg">
+        <div class="input-group rounded-5 p-1">
+          <input
+          id="search"
+            type="search"
+            class="form-control bg-transparent border-0 p-3 text-white"
+            placeholder="Find your location..."
+          />
+          <button class="btn btn-primary rounded-5 px-5">Find</button>
+        </div>
+      </div>
+    </div>
+    <div class="weather-section px-2">
+      <div id="used" class="container-fluid container-lg d-flex p-0 rounded-2">
+       
+      </div>
+    </div>
+
+    <footer class="weather-footer">
+      <div class="container-fluid container-lg">
+        <div class="row mb-4">
+          <div class="col-lg-8">
+            <div class="input-group rounded-5 p-1 mb-sm-5 mb-lg-0">
+              <input
+                type="email"
+                class="form-control bg-transparent border-0 p-3"
+                placeholder="Enter your email to subscribe..."
+              />
+              <button class="btn btn-primary rounded-5 px-5">Subscribe</button>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <ul
+              class="footer-links list-unstyled d-flex justify-content-lg-center align-items-center"
+            >
+              <li class="me-2">
+                <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+              </li>
+              <li class="me-2">
+                <a href=""><i class="fa-brands fa-twitter"></i></a>
+              </li>
+              <li class="me-2">
+                <a href=""><i class="fa-brands fa-google-plus"></i></a>
+              </li>
+              <li class="me-2">
+                <a href=""><i class="fa-brands fa-pinterest"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="copyright mb-5">
+          Copyright 2014 Company name. Designed by Themezy. All rights reserved
+        </div>
+      </div>
+    </footer>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

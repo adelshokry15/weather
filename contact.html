@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+     integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+     crossorigin=""/>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid container-lg py-4 px-lg-1">
+        <a href="#" class="d-flex navbar-brand">
+            <img src="img/logo.png" alt="cloud" class="me-3" />
+            <div class="logo-info">
+              <h6 class="mb-0 text-white">Weather</h6>
+              <small>tagline goes here</small>
+            </div>
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"><i class="fa-solid fa-bars" style="color: #ffffff;"></i></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 text-center text-lg-start">
+            <li class="nav-item me-2">
+              <a class="nav-link px-4 py-1 rounded-4" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item me-2">
+              <a class="nav-link px-4 py-1 rounded-4" href="#">News</a>
+            </li>
+            <li class="nav-item me-2">
+              <a class="nav-link px-4 py-1 rounded-4" href="#">Live Cameras</a>
+            </li>
+            <li class="nav-item me-2">
+              <a class="nav-link px-4 py-1 rounded-4" href="#">Photos</a>
+            </li>
+            <li class="nav-item me-2">
+              <a class="nav-link active px-4 py-1 rounded-4" href="contact.html">Contact</a>
+            </li>
+        </div>
+      </div>
+    </nav>
+    <section class="contact">
+      <div class="container-fluid container-lg">
+        <div class="breadcrumb rounded-5 p-3 fw-lighter mb-5">
+          <a href="/index.html"
+            ><span>Home</span>
+            <img class="ms-2 me-3" src="/img/arrow-gray.png" alt=""
+          /></a>
+          <span class="text-white">Contact</span>
+        </div>
+        <div class="contact-body">
+          <div class="row">
+            <div class="col-lg-5">
+              <div class="contact-details rounded-3">
+                <div
+                  id="map"
+                  data-latitude="-6.897789"
+                  data-longitude="107.621735"
+                ></div>
+                <div class="contact-info p-3">
+                  <address>
+                    <img src="img/icon-marker.png" alt="" />
+                    <p>
+                      Company Name INC. <br />
+                      2803 Avenue Street, Los Angeles
+                    </p>
+                  </address>
+
+                  <a class="me-3" href="#"
+                    ><img class="me-2" src="img/icon-phone.png" alt="" />+1 800
+                    314 235</a
+                  >
+                  <a href="#"
+                    ><img
+                      class="me-2"
+                      src="img/icon-envelope.png"
+                      alt=""
+                    />contact@companyname.com</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 offset-lg-1">
+              <h2 class="section-title fw-normal text-white">Contact us</h2>
+              <p class="fw-light">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Commodi consectetur inventore ducimus, facilis, numquam id
+                soluta omnis eius recusandae nesciunt vero repellat harum cum.
+                Nisi facilis odit hic, ipsum sed!
+              </p>
+              <div class="contact-form text-end">
+                <div class="row gy-4 mb-3">
+                  <div class="col-lg-6">
+                    <input type="text" class="w-100 bg-transparent rounded-5 py-2 px-4" placeholder="Your name...">
+                  </div>
+                  <div class="col-lg-6">
+                    <input type="email" class="w-100 bg-transparent rounded-5 py-2 px-4" placeholder="Your email...">
+                  </div>
+                
+                  <div class="col-lg-6">
+                    <input type="text" class="w-100 bg-transparent rounded-5 py-2 px-4" placeholder="Your name">
+                  </div>
+                  <div class="col-lg-6">
+                    <input type="text" class="w-100 bg-transparent rounded-5 py-2 px-4" placeholder="Your name">
+                  </div>
+                </div>
+                <textarea class="w-100 rounded-5 py-3 px-4 bg-transparent mb-3" name="" placeholder="Message..."></textarea>
+                <button class="btn btn-primary ms-auto rounded-5 px-3 mb-2">Submit</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="weather-footer">
+      <div class="container-fluid container-lg">
+        <div class="row mb-4">
+          <div class="col-lg-8">
+            <div class="input-group rounded-5 p-1 mb-sm-5 mb-lg-0">
+              <input
+                type="email"
+                class="form-control bg-transparent border-0 p-3"
+                placeholder="Enter your email to subscribe..."
+              />
+              <button class="btn btn-primary rounded-5 px-5">Subscribe</button>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <ul
+              class="footer-links list-unstyled d-flex justify-content-lg-center align-items-center"
+            >
+              <li class="me-2">
+                <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+              </li>
+              <li class="me-2">
+                <a href=""><i class="fa-brands fa-twitter"></i></a>
+              </li>
+              <li class="me-2">
+                <a href=""><i class="fa-brands fa-google-plus"></i></a>
+              </li>
+              <li class="me-2">
+                <a href=""><i class="fa-brands fa-pinterest"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="copyright mb-5">
+          Copyright 2014 Company name. Designed by Themezy. All rights reserved
+        </div>
+      </div>
+    </footer>
+    
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="http://maps.google.com/maps/api/js?sensor=false&language=en"></script>
+     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+     integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+     crossorigin=""></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
